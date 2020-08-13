@@ -8,16 +8,19 @@
  *
  * @since 2.2.7
  */
-import { Alt2, Alt2C } from 'fp-ts/lib/Alt'
-import { Bifunctor2 } from 'fp-ts/lib/Bifunctor'
-import { Category2 } from 'fp-ts/lib/Category'
-import * as E from 'fp-ts/lib/Either'
-import { Refinement } from 'fp-ts/lib/function'
-import { Functor2 } from 'fp-ts/lib/Functor'
-import { MonadThrow2C } from 'fp-ts/lib/MonadThrow'
-import { pipe } from 'fp-ts/lib/pipeable'
-import * as T from 'fp-ts/lib/Task'
-import * as TE from 'fp-ts/lib/TaskEither'
+import {
+  Alt2,
+  Alt2C
+} from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Alt.ts'
+import { Bifunctor2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Bifunctor.ts'
+import { Category2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Category.ts'
+import * as E from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Either.ts'
+import { Refinement } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/function.ts'
+import { Functor2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Functor.ts'
+import { MonadThrow2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/MonadThrow.ts'
+import { pipe } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/pipeable.ts'
+import * as T from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Task.ts'
+import * as TE from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/TaskEither.ts'
 import * as DE from './DecodeError'
 import * as D from './Decoder'
 import * as FS from './FreeSemigroup'
@@ -424,7 +427,7 @@ export const URI = 'io-ts/TaskDecoder'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: TaskDecoder<E, A>
   }

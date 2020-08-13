@@ -3,7 +3,7 @@
  */
 import { Reporter } from './Reporter'
 import { Context, getFunctionName, ValidationError } from '.'
-import { fold } from 'fp-ts/lib/Either'
+import { fold } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Either.ts'
 
 function stringify(v: any): string {
   if (typeof v === 'function') {

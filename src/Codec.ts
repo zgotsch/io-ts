@@ -8,9 +8,9 @@
  *
  * @since 2.2.3
  */
-import { identity } from 'fp-ts/lib/function'
-import { Invariant3 } from 'fp-ts/lib/Invariant'
-import { pipe } from 'fp-ts/lib/pipeable'
+import { identity } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/function.ts'
+import { Invariant3 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Invariant.ts'
+import { pipe } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/pipeable.ts'
 import * as D from './Decoder'
 import * as E from './Encoder'
 import { Literal } from './Schemable'
@@ -328,7 +328,7 @@ export const URI = 'io-ts/Codec'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts' {
   interface URItoKind3<R, E, A> {
     readonly [URI]: Codec<R, E, A>
   }

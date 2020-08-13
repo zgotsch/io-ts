@@ -8,18 +8,24 @@
  *
  * @since 2.2.7
  */
-import { Alt2C } from 'fp-ts/lib/Alt'
-import { Applicative2C } from 'fp-ts/lib/Applicative'
-import { Apply2C } from 'fp-ts/lib/Apply'
-import { Bifunctor2 } from 'fp-ts/lib/Bifunctor'
-import * as E from 'fp-ts/lib/Either'
-import { Functor2C } from 'fp-ts/lib/Functor'
-import { Kind2, URIS2 } from 'fp-ts/lib/HKT'
-import { Monad2C } from 'fp-ts/lib/Monad'
-import { MonadThrow2C } from 'fp-ts/lib/MonadThrow'
+import { Alt2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Alt.ts'
+import { Applicative2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Applicative.ts'
+import { Apply2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Apply.ts'
+import { Bifunctor2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Bifunctor.ts'
+import * as E from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Either.ts'
+import { Functor2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Functor.ts'
+import {
+  Kind2,
+  URIS2
+} from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts'
+import { Monad2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Monad.ts'
+import { MonadThrow2C } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/MonadThrow.ts'
 import * as G from './Guard'
 import { intersect_, Literal, memoize } from './Schemable'
-import { Lazy, Refinement } from 'fp-ts/lib/function'
+import {
+  Lazy,
+  Refinement
+} from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/function.ts'
 
 // -------------------------------------------------------------------------------------
 // model

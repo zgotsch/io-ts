@@ -8,9 +8,9 @@
  *
  * @since 2.2.2
  */
-import * as A from 'fp-ts/lib/Array'
-import * as E from 'fp-ts/lib/Eq'
-import * as R from 'fp-ts/lib/Record'
+import * as A from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Array.ts'
+import * as E from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Eq.ts'
+import * as R from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Record.ts'
 import { memoize, Schemable1, WithRefine1, WithUnknownContainers1 } from './Schemable'
 import Eq = E.Eq
 

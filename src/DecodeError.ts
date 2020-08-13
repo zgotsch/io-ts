@@ -8,7 +8,7 @@
  *
  * @since 2.2.7
  */
-import { Semigroup } from 'fp-ts/lib/Semigroup'
+import { Semigroup } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Semigroup.ts'
 import * as FS from './FreeSemigroup'
 
 /**

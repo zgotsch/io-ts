@@ -8,7 +8,13 @@
  *
  * @since 2.2.0
  */
-import { HKT, Kind, Kind2, URIS, URIS2 } from 'fp-ts/lib/HKT'
+import {
+  HKT,
+  Kind,
+  Kind2,
+  URIS,
+  URIS2
+} from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts'
 import { memoize, Schemable, Schemable1, Schemable2C } from './Schemable'
 
 // -------------------------------------------------------------------------------------

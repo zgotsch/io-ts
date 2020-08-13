@@ -10,8 +10,8 @@
  */
 import * as t from './index'
 import { Literal, Schemable1, WithUnion1, WithRefine1, WithUnknownContainers1 } from './Schemable'
-import * as E from 'fp-ts/lib/Either'
-import { pipe } from 'fp-ts/lib/pipeable'
+import * as E from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Either.ts'
+import { pipe } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/pipeable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -171,7 +171,7 @@ export const URI = 'io-ts/Type'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Type<A>
   }

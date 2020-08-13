@@ -8,10 +8,10 @@
  *
  * @since 2.2.3
  */
-import { Contravariant2 } from 'fp-ts/lib/Contravariant'
-import { Category2 } from 'fp-ts/lib/Category'
+import { Contravariant2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Contravariant.ts'
+import { Category2 } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/Category.ts'
 import { memoize, intersect_ } from './Schemable'
-import { identity } from 'fp-ts/lib/function'
+import { identity } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/function.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -207,7 +207,7 @@ export const URI = 'io-ts/Encoder'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts' {
   interface URItoKind2<E, A> {
     readonly [URI]: Encoder<E, A>
   }

@@ -8,7 +8,7 @@
  *
  * @since 2.2.0
  */
-import { pipe } from 'fp-ts/lib/pipeable'
+import { pipe } from 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/pipeable.ts'
 import { Literal, memoize, Schemable1, WithRefine1, WithUnion1, WithUnknownContainers1 } from './Schemable'
 
 // -------------------------------------------------------------------------------------
@@ -290,7 +290,7 @@ export const URI = 'io-ts/Guard'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'https://raw.githubusercontent.com/zgotsch/fp-ts/70244ecc690ea3786fbecd9723533e74b8cd596d/src/HKT.ts' {
   interface URItoKind<A> {
     readonly [URI]: Guard<unknown, A>
   }
